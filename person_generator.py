@@ -34,8 +34,7 @@ class Person:
 
     def get_person_in_string(self, order_="sn, n, pn, a, s, pro, cb, v, pet, he, bb") -> str:
         """Return a string from the function 'get_person_in_list'."""
-        first = person.get_person_in_list(order_)
-        self.person_in_string = ', '.join(first)
+        self.person_in_string = ', '.join(self.get_person_in_list(order_))
         return self.person_in_string
 
     def get_person_in_list(self, order_="sn, n, pn, a, s, pro, cb, v, pet, he, bb") -> list[str]:
